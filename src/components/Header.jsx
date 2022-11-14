@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => (
   <ul>
-    <li><NavLink to="/">Rockets</NavLink></li>
-    <li><NavLink to="/missions">Missions</NavLink></li>
-    <li><NavLink to="/profile">Profile</NavLink></li>
+    <li><NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Rockets</NavLink></li>
+    <li><NavLink to="/missions" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Missions</NavLink></li>
+    <li><NavLink to="/profile" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Profile</NavLink></li>
   </ul>
 );
 
