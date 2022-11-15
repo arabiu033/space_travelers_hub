@@ -21,7 +21,24 @@ const spaceSlice = createSlice({
     status: false,
     missions: [],
   },
-  reducers: {},
+  reducers: {
+    joinMission: (state, action) => {
+      const { id } = action.payload;
+      const newMission = state.missions.map((mission) => {
+        if (mission.id !== id) { return mission; }
+        return { ...mission, joined: true };
+      });
+      state.missions = newMission;
+    },
+    leaveMission(state, action) {
+      const { id } = action.payload;
+      const newMission = state.missions.map((mission) => {
+        if (mission.id !== id) { return mission; }
+        return { ...mission, joined: false };
+      });
+      state.missions = newMission;
+    },
+  },
   extraReducers(builder) {
     builder
       .addCase(getMissions.pending, (state) => {
