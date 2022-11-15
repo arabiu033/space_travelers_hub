@@ -12,8 +12,10 @@ ul {
   gap: 12px;
 }
 
-li {
+li a {
   list-style-type: none;
+  text-decoration: none;
+  color: black;
 }
 
 .active {
@@ -23,4 +25,10 @@ li {
 
 .inActive {
   text-decoration: none;
+}
+
+.loading {
+  margin: auto 3.7rem;
+  color: darkgreen;
+  font-size: 24px;
 }
