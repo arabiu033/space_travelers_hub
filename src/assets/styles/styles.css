@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 12px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.active {
+  text-decoration: underline;
+  color: blue;
+}
+
+.inActive {
+  text-decoration: none;
+}
