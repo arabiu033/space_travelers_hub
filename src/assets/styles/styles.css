@@ -12,8 +12,10 @@ ul {
   gap: 12px;
 }
 
-li {
+li a {
   list-style-type: none;
+  text-decoration: none;
+  color: black;
 }
 
 .active {
