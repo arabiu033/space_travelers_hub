@@ -26,3 +26,9 @@ li a {
 .inActive {
   text-decoration: none;
 }
+
+.loading {
+  margin: auto 3.7rem;
+  color: darkgreen;
+  font-size: 24px;
+}

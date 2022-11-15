@@ -1,16 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Table from 'react-bootstrap/Table';
-import { useSelector, useDispatch } from 'react-redux';
-import { getMissions } from '../redux/space/spaceSlice';
+import { useSelector } from 'react-redux';
+// import { getMissions } from '../redux/space/spaceSlice';
 
 const Missions = () => {
-  const dispatch = useDispatch();
-  const { missions } = useSelector((state) => ({ ...state.space }));
+  const { missions, isLoading } = useSelector((state) => ({ ...state.space }));
   console.log('Missions: ', missions);
-
-  useEffect(() => {
-    dispatch(getMissions());
-  }, []);
+  if (isLoading === 'loading') {
+    return <div className="loading">Loading ...</div>;
+  }
 
   return (
     <Table striped bordered hover>

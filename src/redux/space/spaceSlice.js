@@ -30,7 +30,7 @@ const spaceSlice = createSlice({
       .addCase(getMissions.fulfilled, (state, action) => {
         state.isLoading = 'succeeded';
         console.log(action.payload);
-        state.missions.push(action.payload);
+        state.missions = action.payload;
       })
       .addCase(getMissions.rejected, (state) => {
         state.isLoading = 'failed';
