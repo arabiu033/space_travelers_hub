@@ -4,6 +4,7 @@ import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMissions, joinMission, leaveMission } from '../redux/space/spaceSlice';
+import Spinner from '../components/Spinner';
 
 let fetch = true;
 
@@ -19,7 +20,7 @@ const Missions = () => {
   const { missions, isLoading } = useSelector((state) => ({ ...state.space }));
   // console.log('Missions: ', missions);
   if (isLoading === 'loading') {
-    return <div className="loading">Loading ...</div>;
+    return <Spinner />;
   }
 
   const join = (id) => {
