@@ -3,14 +3,19 @@ import Table from 'react-bootstrap/Table';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMissions } from '../redux/space/spaceSlice';
 
+let fetch = true;
+
 const Missions = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMissions());
+    if (fetch) {
+      dispatch(getMissions());
+      fetch = false;
+    }
   }, [dispatch]);
 
   const { missions, isLoading } = useSelector((state) => ({ ...state.space }));
-  console.log('Missions: ', missions);
+  // console.log('Missions: ', missions);
   if (isLoading === 'loading') {
     return <div className="loading">Loading ...</div>;
   }
