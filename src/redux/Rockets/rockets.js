@@ -13,7 +13,24 @@ const rocketSlice = createSlice({
     rockets: [],
     status: false,
   },
-  reducers: {},
+  reducers: {
+    reserve: (state, action) => {
+      const newState = state.rockets.map((rocket) => {
+        if (rocket.id !== action.payload) return rocket;
+        return { ...rocket, reserved: true };
+      });
+
+      return { ...state, rockets: newState };
+    },
+    unreserve: (state, action) => {
+      const newState = state.rockets.map((rocket) => {
+        if (rocket.id !== action.payload) return rocket;
+        return { ...rocket, reserved: false };
+      });
+
+      return { ...state, rockets: newState };
+    },
+  },
   extraReducers(builder) {
     builder
       .addCase(fetchRockets.pending, (state) => ({ ...state, loading: 'Loading Api' }))
@@ -22,4 +39,5 @@ const rocketSlice = createSlice({
   },
 });
 
+export const { reserve, unreserve } = rocketSlice.actions;
 export default rocketSlice.reducer;
