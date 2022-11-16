@@ -34,7 +34,7 @@ const rocketSlice = createSlice({
   extraReducers(builder) {
     builder
       .addCase(fetchRockets.pending, (state) => ({ ...state, loading: 'Loading Api' }))
-      .addCase(fetchRockets.fulfilled, (state, action) => ({ ...state, rockets: action.payload }))
+      .addCase(fetchRockets.fulfilled, (state, action) => ({ ...state, loading: 'api loaded', rockets: action.payload }))
       .addCase(fetchRockets.rejected, (state) => ({ ...state, loading: 'Failed to load Api.' }));
   },
 });

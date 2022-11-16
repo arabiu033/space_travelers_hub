@@ -18,7 +18,7 @@ const Missions = () => {
   }, [dispatch]);
 
   const { missions, isLoading } = useSelector((state) => ({ ...state.space }));
-  // console.log('Missions: ', missions);
+
   if (isLoading === 'loading') {
     return <Spinner />;
   }
