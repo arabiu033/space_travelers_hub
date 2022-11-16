@@ -5,6 +5,7 @@ import styles from '../assets/styles/rocket.module.css';
 
 let fetch = true;
 const Rockets = () => {
+  console.log('fetched: ', fetch);
   const dispatch = useDispatch();
   useEffect(() => {
     if (fetch) {
