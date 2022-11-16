@@ -23,17 +23,17 @@ const spaceSlice = createSlice({
   },
   reducers: {
     joinMission: (state, action) => {
-      const { id } = action.payload;
+      const id = action.payload;
       const newMission = state.missions.map((mission) => {
-        if (mission.id !== id) { return mission; }
+        if (mission.mission_id !== id) { return mission; }
         return { ...mission, joined: true };
       });
       state.missions = newMission;
     },
     leaveMission(state, action) {
-      const { id } = action.payload;
+      const id = action.payload;
       const newMission = state.missions.map((mission) => {
-        if (mission.id !== id) { return mission; }
+        if (mission.mission_id !== id) { return mission; }
         return { ...mission, joined: false };
       });
       state.missions = newMission;
@@ -55,6 +55,6 @@ const spaceSlice = createSlice({
   },
 });
 
-// export const {} = spaceSlice.actions;
+export const { joinMission, leaveMission } = spaceSlice.actions;
 
 export default spaceSlice.reducer;
