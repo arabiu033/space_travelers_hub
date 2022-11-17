@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import spaceReducer from './space/spaceSlice';
-import rocketSlice from './Rockets/rockets';
+import rocketSlice from './space/rocketSlice';
 
 const store = configureStore({
   reducer: {

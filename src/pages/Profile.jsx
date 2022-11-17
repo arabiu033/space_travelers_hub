@@ -5,17 +5,17 @@ import Spinner from '../components/Spinner';
 
 const Profile = () => {
   const { missions, isLoading } = useSelector((state) => ({ ...state.space }));
-
   const joinedMission = missions.filter((mission) => mission.joined === true);
 
-  console.log(joinedMission);
+  const { rockets } = useSelector((state) => ({ ...state.rockets }));
+  const reserves = rockets.filter((roc) => roc.reserved);
 
   if (isLoading === 'loading') {
     return <Spinner />;
   }
 
   return (
-    <div className="d-flex gap-3">
+    <div className="mx-auto d-flex gap-5 align-items-start" style={{ width: '70%' }}>
       <Table>
         <thead>
           <tr>
@@ -42,10 +42,10 @@ const Profile = () => {
         </thead>
         <tbody>
           {
-            joinedMission && joinedMission.map((mission) => (
-              <tr key={mission.mission_id}>
+            reserves && reserves.map((reserve) => (
+              <tr key={reserve.id}>
                 <td>
-                  {mission.mission_name}
+                  {reserve.rocket_name}
                 </td>
               </tr>
             ))
