@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styles from '../assets/styles/rocket.module.css';
-import { reserve, unreserve, fetchRockets } from '../redux/Rockets/rockets';
+import { reserve, unreserve, fetchRockets } from '../redux/space/rocketSlice';
 import Spinner from '../components/Spinner';
 
 let fetch = true;
 const Rockets = () => {
-  console.log('fetched: ', fetch);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -25,7 +24,7 @@ const Rockets = () => {
   return (
     rockets?.map((rocket) => (
       <div key={rocket.id} className={styles.grid}>
-        <img src={rocket.flickr_images[0]} alt="rocket" />
+        <img src={rocket.flickr_images[0]} alt={rocket.rocket_name} />
         <div>
           <h3>{rocket.rocket_name}</h3>
           <p>
