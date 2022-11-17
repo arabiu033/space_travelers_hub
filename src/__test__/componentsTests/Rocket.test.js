@@ -1,7 +1,7 @@
 import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
-import Rocket from '../pages/Rocket';
-import store from '../redux/configureStore';
+import Rocket from '../../pages/Rocket';
+import store from '../../redux/configureStore';
 
 describe('Rockets page tests', () => {
   it('it renders', () => {
