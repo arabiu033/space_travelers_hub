@@ -1,8 +1,9 @@
-import getMissions from '../../api/index';
+import * as api from '../../api';
 
 describe('FetchMissions', () => {
   test('gets the correct data', async () => {
-    const data = await getMissions();
+    const response = await api.getMissions();
+    const { data } = response;
     expect(data).toBeInstanceOf(Array);
     expect(data[0]).toBeInstanceOf(Object);
     expect(data[0].id).not.toBeNull();
