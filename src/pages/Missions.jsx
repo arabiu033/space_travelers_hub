@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
+import Badge from 'react-bootstrap/Badge';
+import Button from 'react-bootstrap/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMissions, joinMission, leaveMission } from '../redux/space/spaceSlice';
+import Spinner from '../components/Spinner';
 
 let fetch = true;
 
@@ -15,9 +18,9 @@ const Missions = () => {
   }, [dispatch]);
 
   const { missions, isLoading } = useSelector((state) => ({ ...state.space }));
-  // console.log('Missions: ', missions);
+
   if (isLoading === 'loading') {
-    return <div className="loading">Loading ...</div>;
+    return <Spinner />;
   }
 
   const join = (id) => {
@@ -46,18 +49,18 @@ const Missions = () => {
               <td>{mission.description}</td>
               <td className="member">
                 {mission.joined && (
-                <p className="active-member">Active Member</p>
+                  <Badge bg="success" as="Button">Active Member</Badge>
                 )}
                 {!mission.joined && (
-                <p className="not-member">NOT A MEMBER</p>
+                  <Badge bg="secondary" as="Button">NOT A MEMBER</Badge>
                 )}
               </td>
               <td className="btn">
                 {mission.joined && (
-                <button className="leave" type="button" onClick={() => leave(mission.mission_id)}>Leave Mission</button>
+                  <Button as="a" variant="outline-danger" onClick={() => leave(mission.mission_id)}>Leave Mission</Button>
                 )}
                 {!mission.joined && (
-                <button className="join" type="button" onClick={() => join(mission.mission_id)}>Join Mission</button>
+                <Button as="a" variant="outline-success" onClick={() => join(mission.mission_id)}>Join Mission</Button>
                 )}
               </td>
             </tr>

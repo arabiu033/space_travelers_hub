@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styles from '../assets/styles/rocket.module.css';
 import { reserve, unreserve, fetchRockets } from '../redux/Rockets/rockets';
+import Spinner from '../components/Spinner';
 
 let fetch = true;
 const Rockets = () => {
@@ -15,9 +16,14 @@ const Rockets = () => {
     }
   });
 
-  const { rockets } = useSelector((state) => ({ ...state.rockets }));
+  const { rockets, loading } = useSelector((state) => ({ ...state.rockets }));
+
+  if (loading === 'Loading Api') {
+    return <Spinner />;
+  }
+
   return (
-    rockets.map((rocket) => (
+    rockets?.map((rocket) => (
       <div key={rocket.id} className={styles.grid}>
         <img src={rocket.flickr_images[0]} alt="rocket" />
         <div>
