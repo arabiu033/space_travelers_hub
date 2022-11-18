@@ -2,7 +2,7 @@
 This is  a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.
 
 ## Below is the screenshot of our work
-<img src="https://github.com/arabiu033/space-travelers-hub/blob/develop/src/assets/images/Screenshot_2022-11-18_12-36-13.png" width="700" height="440">
+<img src="https://github.com/arabiu033/space-travelers-hub/blob/develop/src/assets/images/Screenshot_2022-11-18_12-36-13.png" width="900" height="440">
 
 ## Built with
 - Javascript
