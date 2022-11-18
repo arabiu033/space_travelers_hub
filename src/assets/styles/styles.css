@@ -43,8 +43,8 @@ li a {
   text-decoration: none;
 }
 
-.loading {
-  margin: auto 3.7rem;
-  color: darkgreen;
-  font-size: 24px;
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
