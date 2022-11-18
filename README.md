@@ -2,9 +2,9 @@
 This is  a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.
 
 ## Below is the screenshot of our work
-<img src="https://github.com/arabiu033/arabiu033/blob/main/4416312.jpg" width="1000" height="440">
-<img src="https://github.com/arabiu033/arabiu033/blob/main/4416312.jpg" width="1000" height="440">
-<img src="https://github.com/arabiu033/arabiu033/blob/main/4416312.jpg" width="1000" height="440">
+<img src="https://github.com/arabiu033/space-travelers-hub/blob/develop/src/assets/images/Screenshot_2022-11-18_12-36-13.png" width="1000" height="440">
+<img src="https://github.com/arabiu033/space-travelers-hub/blob/develop/src/assets/images/Screenshot_2022-11-18_12-37-26.png" width="1000" height="440">
+<img src="https://github.com/arabiu033/space-travelers-hub/blob/develop/src/assets/images/Screenshot_2022-11-18_12-37-56.png" width="1000" height="440">
 
 ## Built with
 - Javascript
