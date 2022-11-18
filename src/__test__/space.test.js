@@ -42,7 +42,7 @@ describe('stimulate user interaction', () => {
     expect(text).toBeInTheDocument();
   });
 
-  test('test when user click Missions nav link', async () => {
+  test('test when user click Profile nav link', async () => {
     render(
       <BrowserRouter>
         <Provider store={store}>
