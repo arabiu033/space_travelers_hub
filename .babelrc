@@ -6,7 +6,7 @@
       {
         "modules": "commonjs"
       }
-    ],
+    ]
   ],
   "plugins": ["@babel/plugin-syntax-jsx"]
 }

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile page it renders 1`] = `
+<div
+  className="mx-auto d-flex gap-5 align-items-start"
+  style={
+    Object {
+      "width": "70%",
+    }
+  }
+>
+  <table
+    className="table"
+  >
+    <thead>
+      <tr>
+        <th>
+          My missions
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+  <table
+    className="table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Rockets
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
