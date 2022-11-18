@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  width: 60%;
+  grid-template-columns: 1fr 20fr;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.grid img {
+  width: 180px;
+  height: 180px;
+}
+
+button {
+  padding: 4px 9px;
+  border: none;
+  background-color: #6338de;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.unreserve {
+  background-color: #afc1a1;
+  color: black;
+  border: 2px solid #eee;
+}
+
+.grid span {
+  padding: 2px 4px;
+  background-color: teal;
+  color: #fff;
+  margin: 2px;
+  font-size: 0.7rem;
+  border-radius: 4px;
+}

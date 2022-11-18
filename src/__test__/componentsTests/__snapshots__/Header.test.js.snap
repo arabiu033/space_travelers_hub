@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly Header component 1`] = `
+<div
+  className="header"
+>
+  <div>
+    <img
+      alt="space traveler's hub"
+      src="planet.png"
+      style={
+        Object {
+          "height": "65px",
+          "width": "65px",
+        }
+      }
+    />
+    <span
+      className="title"
+    >
+      Space Travelers Hub
+    </span>
+  </div>
+  <ul>
+    <li>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+      >
+        Rockets
+      </a>
+    </li>
+    <li>
+      <a
+        className="inactive"
+        href="/missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+    </li>
+    <li>
+      <a
+        className="inactive"
+        href="/profile"
+        onClick={[Function]}
+      >
+        Profile
+      </a>
+    </li>
+  </ul>
+</div>
+`;
