@@ -1,8 +1,10 @@
 # space-travelers-hub
 This is  a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.
 
-## Below is the screenshot of my work
-![space-travelers-hub](https://github.com/ndikumanaisaie/space-travelers-hub/blob/use-Redux-in-React/src/assets/images/shot.png)
+## Below is the screenshot of our work
+<img src="https://github.com/arabiu033/arabiu033/blob/main/4416312.jpg" width="1000" height="440">
+<img src="https://github.com/arabiu033/arabiu033/blob/main/4416312.jpg" width="1000" height="440">
+<img src="https://github.com/arabiu033/arabiu033/blob/main/4416312.jpg" width="1000" height="440">
 
 ## Built with
 - Javascript
@@ -28,7 +30,7 @@ This is  a web application for a company that provides commercial and scientific
 - [space-travelers-hub](https://github.com/arabiu033/space-travelers-hub.git)
 
 ## Link to URL in the browser
-- [space-travelers-hub](https://bookcollectionreact.netlify.app/)
+- [space-travelers-hub](https://space-hubs.netlify.app)
 
 ## Getting Started
 
