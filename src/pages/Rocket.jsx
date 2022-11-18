@@ -22,7 +22,7 @@ const Rockets = () => {
   }
 
   return (
-    rockets?.map((rocket) => (
+    rockets.map((rocket) => (
       <div key={rocket.id} className={styles.grid}>
         <img src={rocket.flickr_images[0]} alt={rocket.rocket_name} />
         <div>
