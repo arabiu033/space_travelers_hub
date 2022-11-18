@@ -19,6 +19,11 @@ This is  a web application for a company that provides commercial and scientific
 - Twitter: [Ndikuma38670724](https://twitter.com/Ndikuma38670724)
 - LinkedIn: [Ndikumana Isaie](https://www.linkedin.com/in/ndikumanaisaie/)
 
+👤 **Aminu Rabiu**
+
+- GitHub: [@arabiu033](https://github.com/arabiu033)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/larabiu033)
+
 ## Link to URL on gitHub
 - [space-travelers-hub](https://github.com/arabiu033/space-travelers-hub.git)
 
