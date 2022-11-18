@@ -49,10 +49,10 @@ const Missions = () => {
               <td>{mission.description}</td>
               <td className="member">
                 {mission.joined && (
-                  <Badge bg="success" as="Button">Active Member</Badge>
+                  <Badge bg="success" as="button">Active Member</Badge>
                 )}
                 {!mission.joined && (
-                  <Badge bg="secondary" as="Button">NOT A MEMBER</Badge>
+                  <Badge bg="secondary" as="button">NOT A MEMBER</Badge>
                 )}
               </td>
               <td className="btn">
